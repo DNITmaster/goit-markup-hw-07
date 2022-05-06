@@ -1,11 +1,10 @@
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
 .header {
   border-bottom: 1px solid;
   border-color: #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo {
@@ -29,6 +28,9 @@
 
 .header-list__item:not(:last-child) {
   margin-right: 50px;
+  & {
+    position: relative;
+  }
 }
 
 .header-connect {
@@ -39,6 +41,11 @@
   justify-content: center;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header-list__link {
@@ -52,14 +59,14 @@
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  .current {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.header-list__link:hover,
-.header-list__link:focus,
-.current {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .header-list__mail,
 .header-list__tel {
   font-weight: 500;
@@ -71,10 +78,13 @@
   justify-content: center;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list__item {
-  position: relative;
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .header-list__link::after {
@@ -107,28 +117,13 @@
   border-radius: 2px;
 }
 
-.header-list__mail:hover,
-.header-list__mail:focus,
-.header-list__tel:hover,
-.header-list__tel:focus {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-connect:hover,
-.header-connect:focus {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header-list__icon {
   margin-right: 10px;
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list__icon:hover,
-.header-list__icon:focus {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

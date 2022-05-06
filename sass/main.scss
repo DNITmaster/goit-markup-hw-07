@@ -3,6 +3,15 @@
 @import "./utils/hidden";
 @import "./base/container";
 @import "./base/section";
+///////////////////////////////
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/next";
+@import "./layout/after";
+@import "./layout/about";
+@import "./layout/clients";
+@import "./layout/footer";
+//////////////////////////////
+@import "./components/title";
+@import "./components/team";
+@import "./components/modal";
