@@ -1,6 +1,4 @@
-@import "./utils/variables";
 @import "./base/reset";
-@import "./utils/hidden";
 @import "./base/container";
 @import "./base/section";
 ///////////////////////////////
@@ -11,7 +9,10 @@
 @import "./layout/about";
 @import "./layout/clients";
 @import "./layout/footer";
+@import "./layout/portfolio";
 //////////////////////////////
 @import "./components/title";
-@import "./components/team";
 @import "./components/modal";
+//////////////////////////////
+@import "./utils/hidden";
+@import "./utils/variables";
